@@ -1,0 +1,68 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-primary-light: #a5b4fc;
+  --color-bg: #f9fafb;
+  --color-border: #ccc;
+  --radius: 8px;
+  --font-base: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: var(--font-base);
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.textarea {
+  min-height: 100px;
+  max-height: 300px;
+  resize: vertical;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: var(--font-base);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2563eb; /* primary-darker */
+}
+
+.button:disabled {
+  background-color: var(--color-primary-light);
+  cursor: not-allowed;
+}
